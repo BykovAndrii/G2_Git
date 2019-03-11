@@ -12,7 +12,7 @@ namespace HW
         {
         }
 
-        public void GetStudentIntoGroup1(List<Student> candidates)
+        public void GetStudentIntoGroup2(List<Student> candidates)
         {
             if (candidates.Count != 6)
             {
