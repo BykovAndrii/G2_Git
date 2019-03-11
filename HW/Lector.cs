@@ -12,9 +12,9 @@ namespace HW
         {
         }
 
-        public void GetStudentIntoGroup(List<Student> candidates)
+        public void GetStudentIntoGroup1(List<Student> candidates)
         {
-            if (candidates.Count != 6)
+            if (candidates.Count != 5)
             {
                 Console.WriteLine("Count of candidates' group is not equal 5 as expected.");
                 return;
