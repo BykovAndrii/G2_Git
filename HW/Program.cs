@@ -8,6 +8,7 @@ namespace HW
         static void Main(string[] args)
         {
             Console.WriteLine("Change in Test brance");
+            Console.WriteLine("Change in master brance");
 
             Lector lector1 = new Lector("lector name 1", "lector surname 1", "qa");
             List<Student> candidates = new List<Student>();
