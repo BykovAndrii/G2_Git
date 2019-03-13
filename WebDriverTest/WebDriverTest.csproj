@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E13B553-3C80-48AB-BA08-73BF64637FAB}</ProjectGuid>
+    <ProjectGuid>{F974F48C-E108-4E5E-A00C-82024C3100B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebDriver</RootNamespace>
-    <AssemblyName>WebDriver</AssemblyName>
+    <RootNamespace>WebDriverTest</RootNamespace>
+    <AssemblyName>WebDriverTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -59,7 +59,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="UiTests.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
