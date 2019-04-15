@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.Collections.ObjectModel;
 
 namespace WebDriverTest
 {
@@ -40,6 +41,30 @@ namespace WebDriverTest
 
             driver.SwitchTo().Window(windowHandle);
 
+        }
+
+        [Test]
+        public void SwitchToNewWindow()
+        {
+            var oldWindowHandles = driver.WindowHandles;
+
+            // Do something to open bew window/tab
+            // Some code
+
+            SwitchToWNewWindow(oldWindowHandles);
+        }
+
+        private void SwitchToWNewWindow(ReadOnlyCollection<string> oldWindowHandles)
+        {
+            var newWindowHandles = driver.WindowHandles;
+
+            foreach (var handle in newWindowHandles)
+            {
+                if (!oldWindowHandles.Contains(handle))
+                {
+                    driver.SwitchTo().Window(handle);
+                }
+            }
         }
     }
 }
