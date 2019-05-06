@@ -53,7 +53,9 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="BaseTest.cs" />
     <Compile Include="Calculator.cs" />
+    <Compile Include="CustomAttribute.cs" />
     <Compile Include="UnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

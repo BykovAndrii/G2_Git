@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 
 namespace Collections
 {
@@ -50,37 +51,42 @@ namespace Collections
 
             #region Dictionary
 
-            Dictionary<int, string> testDictionary = new Dictionary<int, string>();
+            //Dictionary<int, string> testDictionary = new Dictionary<int, string>();
 
-            testDictionary.Add(0, "test 0");
-            testDictionary.Add(1, "test 1");
-            testDictionary.Add(2, "test 2");
-            testDictionary.Add(3, "test 3");
-            testDictionary.Add(4, "test 4");
+            //testDictionary.Add(0, "test 0");
+            //testDictionary.Add(1, "test 1");
+            //testDictionary.Add(2, "test 2");
+            //testDictionary.Add(3, "test 3");
+            //testDictionary.Add(4, "test 4");
 
-            var keys = testDictionary.Keys;
+            //var keys = testDictionary.Keys;
 
-            foreach (var key in keys)
-            {
-                Console.WriteLine(key);
-            }
+            //foreach (var key in keys)
+            //{
+            //    Console.WriteLine(key);
+            //}
 
-            var values = testDictionary.Values;
+            //var values = testDictionary.Values;
 
-            foreach (var value in values)
-            {
-                Console.WriteLine(value);
-            }
+            //foreach (var value in values)
+            //{
+            //    Console.WriteLine(value);
+            //}
 
-            foreach (var item in testDictionary)
-            {
-                Console.WriteLine(item.Key);
-                Console.WriteLine(item.Value);
-            }
+            //foreach (var item in testDictionary)
+            //{
+            //    Console.WriteLine(item.Key);
+            //    Console.WriteLine(item.Value);
+            //}
 
             #endregion
+            
+            var data = ConfigurationManager.AppSettings["TestData"];
+
+            Console.WriteLine(data);
 
             Console.ReadKey();
+
 
         }
     }

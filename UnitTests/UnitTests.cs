@@ -4,31 +4,35 @@ using System;
 namespace UnitTests
 {
     [TestFixture]
-    public class UnitTests
-    {             
-        [OneTimeSetUp]
-        public void BeforeAllTest()
-        {
-            Console.WriteLine("BeforeAllTest");
-        }
+    public class UnitTests : BaseTest
+    {
+        #region Moved to BaseTest class
 
-        [OneTimeTearDown]
-        public void AfterAllTest()
-        {
-            Console.WriteLine("AfterAllTest");
-        }
+        //[OneTimeSetUp]
+        //public void BeforeAllTest()
+        //{
+        //    Console.WriteLine("BeforeAllTest");
+        //}
 
-        [SetUp]
-        public void BeforeEveryTest()
-        {
-            Console.WriteLine("BeforeEveryTest");
-        }
+        //[OneTimeTearDown]
+        //public void AfterAllTest()
+        //{
+        //    Console.WriteLine("AfterAllTest");
+        //}
 
-        [TearDown]
-        public void AfterEveryTest()
-        {
-            Console.WriteLine("AfterEveryTest");
-        }
+        //[SetUp]
+        //public void BeforeEveryTest()
+        //{
+        //    Console.WriteLine("BeforeEveryTest");
+        //}
+
+        //[TearDown]
+        //public void AfterEveryTest()
+        //{
+        //    Console.WriteLine("AfterEveryTest");
+        //}
+
+        #endregion
 
         [Category("CalculatorTest")]
         [Category("CalculatorTest1")]
@@ -54,7 +58,7 @@ namespace UnitTests
         [Test]
         public void JustTest()
         {
-            Console.WriteLine(Calculator.DivideTwoIntegers(3, 0));
+            //Console.WriteLine(Calculator.DivideTwoIntegers(3, 0));
             Console.WriteLine("Another test");
         }
 

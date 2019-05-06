@@ -7,6 +7,11 @@ namespace BDD
     [Binding]
     class TestFeatureSteps
     {
+        [AfterScenario("MyFirstBddTest")]
+        public void CleanDb()
+        {
+        }
+
         int[] numbers = new int[2]; 
         int counter = 0;
         int result = 0;

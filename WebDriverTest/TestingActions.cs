@@ -6,6 +6,12 @@ namespace WebDriverTest
 {
     class TestingActions
     {
+        #region Test data
+
+        private string _data = "test";
+
+        #endregion
+
         [Test]
         public void TestingActionsAndAction()
         {
